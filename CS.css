@@ -1,0 +1,554 @@
+/* akar */
+:root {
+    --bs-primary: #dc3545;
+    --bs-primary-rgb: 220, 53, 69;
+    --bs-body-font-family: 'Outfit', sans-serif;
+    --bs-body-bg: #0f172a;
+    --bs-body-color: #88898a;
+}
+
+/* general */
+body {
+    background: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.95)), url('GBR/mbg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--bs-body-color);
+    font-family: var(--bs-body-font-family);
+    min-height: 100vh;
+}
+
+.text-light {
+    color: #f8f9fa !important;
+}
+
+.text-muted {
+    color: #94a3b8 !important;
+}
+
+/* kaca*/
+.glass-badge {
+    background: rgba(220, 53, 69, 0.15);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(220, 53, 69, 0.3);
+    color: #ff6b7b !important;
+    border-radius: 2rem;
+}
+
+.glass-panel {
+    background: rgba(30, 41, 59, 0.6);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    color: #f8fafc;
+}
+
+
+/* Navbar */
+.navbar {
+    background-color: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-nav .nav-link {
+    color: #cbd5e1 !important;
+    font-weight: 500;
+    transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.navbar-nav .nav-link.active {
+    color: #dc3545;
+    border-bottom: 2px solid #dc3545;
+}
+
+.navbar-nav .nav-link:hover {
+    transform: scale(1.05);
+    color: #b02a37;
+}
+
+.nav-tabs .nav-link {
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: #6c757d;
+    font-weight: 500;
+}
+
+.nav-tabs .nav-link.active {
+    border-bottom-color: #dc3545;
+    color: #dc3545;
+    background-color: transparent;
+}
+
+.nav-tabs .nav-link:hover {
+    border-bottom-color: #b02a37;
+    color: #b02a37;
+}
+
+/* logo */
+.navbar-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #f8fafc !important;
+}
+
+.wrapper {
+    display: inline-flex;
+    align-items: center;
+    height: auto;
+}
+
+.img-area {
+    position: relative;
+    width: 32px;
+    height: 32px;
+}
+
+figure {
+    margin: 0;
+}
+
+.img-area img {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+
+.img-area img.img-back {
+        opacity: 0;
+}
+
+.navbar:hover .img-area img.img-front {
+    opacity: 0;
+}
+
+.navbar:hover .img-area img.img-back {
+    opacity: 1;
+}
+
+.img-area img.img-front:hover {
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+
+
+/* Tomobol */
+.btn {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.01);
+    box-shadow: 0 15px 40px rgba(220, 53, 69, 0.15);
+    text-decoration: none;
+    color: #a1a1a1;
+}
+
+
+
+/* Cardd */
+.card {
+    height: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1rem;
+    overflow: hidden;
+    background: rgba(30, 41, 59, 0.6);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.h-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.h-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.18);
+}
+
+.h-card .card-body p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+
+.card-body {
+    color: #f8fafc;
+}
+
+.card-title {
+    font-weight: 700;
+}
+
+.card-title a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.card-title a:hover {
+    color: inherit;
+    text-decoration: underline;
+}
+
+
+
+/* List */
+.card-body ul,
+ul.custom-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    line-height: 1.8;
+    color: #cbd5e1;
+    font-size: 1.1rem;
+}
+
+.card-body ul li,
+ul.custom-list li {
+    margin-bottom: 0.5rem;
+}
+
+.card-body ul li::before,
+ul.custom-list li::before {
+    content: "> ";
+    color: var(--bs-primary);   
+    font-weight: 700;
+}
+
+
+
+/* table */
+.table th,
+.table td {
+    vertical-align: middle;
+    text-align: center;
+    padding: 1rem 0.75rem;
+}
+
+.table thead th {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.08);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.rank {
+    --bs-table-bg: rgba(0, 0, 0, 0.15);
+    border-radius: 1rem;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+}
+
+.rank tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.rank tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.rank thead th {
+    color: var(--bs-primary);
+    width: 35%;
+}
+
+.rank td {
+    color: #f8fafc;
+    font-weight: 500;
+}
+
+.rank a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+.rank a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* home */
+.hero-bg {
+    position: relative;
+    min-height: 88vh;
+    background: linear-gradient(135deg, rgba(23, 23, 23, 0.623), rgba(130, 130, 130, 0.16)), url('GBR/MineSweeper.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(128, 128, 128, 0.32);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-title {
+    color: #fff;
+}
+
+.hero-subtitle {
+    color: rgba(248, 249, 255, 0.92);
+}
+
+.hero-card {
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.92);
+}
+
+.hero-image {
+    max-width: 100%;
+    height: a   uto;
+    border-radius: 1rem;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease;
+}
+
+.hero-image:hover {
+    transform: scale(1.05);
+}
+
+.stat-box {
+    border-radius: 1.25rem;
+    background: #f8f9ff;
+}
+
+.section-alt {
+    background: rgba(15, 23, 42, 0.8);
+}
+
+.section-highlight {
+    background: rgba(15, 23, 42, 0.9);
+}
+
+.section-block {
+    background: rgba(30, 41, 59, 0.6);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    color: #f8fafc;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(220, 53, 69, 0.15);
+}
+
+.section-image {
+    width: 75%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 1.5rem;
+    min-height: 300px;
+}
+
+.feature-card {
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(220, 53, 69, 0.2);
+    border-radius: 1.25rem;
+    min-height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    width: 52px;
+    height: 52px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(253, 13, 13, 0.12);
+    border-radius: 16px;
+    color: #fd0d0d;
+    font-size: 1.2rem;
+}
+
+
+
+
+/* Footer (kaki) */
+.kaki {
+    background: linear-gradient(135deg, rgba(62, 62, 62, 0.410), rgba(73, 73, 73, 0.410));
+    color: #3a3a3a;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.kaki h2 {
+    color: #ffffff;
+}
+
+.kaki p {
+    color: #cbd5e1;
+}
+
+.kaki .btn {
+    background: rgba(255, 255, 255, 0.92);
+    color: #0f172a;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.kaki .btn:hover {
+    background: #ffffff;
+    box-shadow: 0 16px 30px rgba(15, 23, 42, 0.18);
+    transform: translateY(-2px);
+}
+
+.kaki .col-auto {
+    min-width: 180px;
+}
+
+.kaki a {
+    text-decoration: none;
+}
+
+.kaki a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+/* game */
+.mbg {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('GBR/MineSweeper.png');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iframe-wrapper {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+}
+
+
+
+/* carin */
+body.carin {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('GBR/carin.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+
+/* pola */
+body.pola-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('GBR/pola.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.pola h2 {
+    text-align: center;
+}
+
+
+
+/* temnya */
+body.temnya-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('GBR/mbg temnya.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.place-bg {
+    background: #1e293b;
+}
+
+/* .card-other-place {
+    background: rgba(30, 41, 59, 0.8);
+    border: 1px solid rgba(220, 53, 69, 0.2);
+} */
+
+.card-img,
+.card-img-top {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+}
+
+.carin .card-img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* DAGAMES */
+body.MSO-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://minesweeper.online/img/homepage/expert_night.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+body.MSN-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://indogamers.com/_next/image?url=https%3A%2F%2Fassets.indogamers.com%2Fmedia%2Fimages%2F2024%2F07%2F09%2F1-937505466756.webp&w=3840&q=75');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+body.GMS-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fl2uym02hjx46ty3c6ez2.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+body.MSP-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://img.itch.zone/aW1hZ2UvMzY4MDI3OC8yMTg5NzQ4My5wbmc=/original/3wnFUj.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}

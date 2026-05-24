@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Minesweeper Plus</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CS.css" type="text/css" media="all" />
+</head>
+
+<body class="MSP-bg">
+
+    <!--nav-->
+    <nav class="navbar navbar-dark navbar-expand-lg temnya fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="../index.html">
+                <div class="wrapper">
+                    <figure>
+                        <div class="img-area" style="width: 50px; height: 50px;">
+                            <img src="../GBR/Smiley+ (2).png" alt="Logo" class="img-back">
+                            <img src="../GBR/Smiley+ (1).png" alt="Logo" class="img-front">
+                        </div>
+                    </figure>
+                </div>
+                Penyapu Ranjau
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="../Permainan.html">Permainan</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="../Carin.html">Cara Bermain</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="../Pola.html">Pola</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" aria-current="page" href="../Temnya.html">Tempat Main Lainnya</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--nav-->
+
+    <div class="container py-5 mt-5">
+        
+        <nav aria-label="breadcrumb" class="mb-4 mx-auto" style="max-width: 960px;">
+            <ol class="breadcrumb p-2 px-3 rounded-3 mb-0 d-inline-flex"
+                style="background: rgba(30, 41, 59, 0.4); border: 1px solid rgba(255, 255, 255, 0.1);">
+                <li class="breadcrumb-item"><a href="../Temnya.html" class="text-decoration-none text-info">Tempat Main
+                        Lainnya</a></li>
+                <li class="breadcrumb-item active text-light" aria-current="page">Minesweeper Plus</li>
+            </ol>
+        </nav>
+
+        
+        <div class="mx-auto rounded-4 shadow-lg overflow-hidden border border-secondary"
+            style="max-width: 960px; background: #1e293b;">
+
+            
+            <div class="position-relative">
+                <img src="https://i.ytimg.com/vi/diF4HAsIntc/hqdefault.jpg" alt="Minesweeper Plus Banner"
+                    class="w-100 object-fit-cover"
+                    style="height: 380px; object-position: center; filter: brightness(0.95);">
+                <div class="position-absolute" style="bottom: 2rem; left: 2.5rem; z-index: 2;">
+                    <span
+                        class="badge rounded-pill text-bg-primary shadow-lg text-dark px-4 py-2 d-inline-flex align-items-center gap-2 fs-6 border border-light border-opacity-25">
+                        <span class="fs-5">💻</span> PC
+                    </span>
+                    <span
+                        class="badge rounded-pill text-bg-primary shadow-lg text-dark px-4 py-2 d-inline-flex align-items-center gap-2 fs-6 border border-light border-opacity-25 ms-2">
+                        <span class="fs-5">📱</span> Android
+                    </span>
+                </div>
+            </div>
+
+            
+            <div class="p-4 px-md-5 d-flex flex-column flex-md-row align-items-md-center justify-content-between border-bottom border-secondary gap-3"
+                style="background: #0f172a;">
+                <h1 class="display-6 fw-bold text-primary mb-0 text-center text-md-start">Minesweeper Plus</h1>
+                <a href="https://jorel-simpson.itch.io/minesweeper-plus" target="_blank"
+                    class="btn btn-lg px-5 py-3 shadow-lg bg-dark fw-bold rounded-pill text-white text-center"
+                    style="font-size: 1.1rem; border-color: #ffffff;">
+                    Kunjungi
+                </a>
+            </div>
+
+            
+            <div class="p-4 p-md-5">
+                <div class="row g-5">
+                    
+                    <div class="col-lg-8 text-light">
+                        <p class="fs-5" style="line-height: 1.7; color: #cbd5e1;">
+                            <i>"A fresh new take on the classic game you know and love."</i> Edisi definitif yang
+                            memberikan sentuhan modern pada Minesweeper. Dilengkapi dengan berbagai fitur baru, mode
+                            permainan unik, dan grafis pixel art yang menawan.
+                        </p>
+
+                        <h4 class="text-white mt-5 mb-3 border-bottom border-secondary pb-2">Fitur Unggulan (PLUS)</h4>
+                        <ul class="list-unstyled" style="line-height: 1.8; color: #cbd5e1; font-size: 1.1rem;">
+                            <li class="mb-2"><span class="text-primary me-2 fw-bold">&gt;</span> <b>Health Gauge</b>
+                                (Indikator Nyawa) sehingga Anda tidak langsung kalah saat membuat 1 kesalahan.</li>
+                            <li class="mb-2"><span class="text-primary me-2 fw-bold">&gt;</span> <b>Mine Sonar</b> untuk
+                                membantu melacak ranjau di area yang sulit.</li>
+                            <li class="mb-2"><span class="text-primary me-2 fw-bold">&gt;</span> Mode Petualangan
+                                Singkat (Adventure Mode) dengan beberapa episode cerita.</li>
+                            <li class="mb-2"><span class="text-primary me-2 fw-bold">&gt;</span> Kemampuan untuk beralih
+                                antara gaya visual modern dan retro (klasik).</li>
+                            <li class="mb-2"><span class="text-primary me-2 fw-bold">&gt;</span> Animasi ledakan ranjau
+                                yang nyata (<i>Ranjau meledak sungguhan!</i>).</li>
+                            <li class="mb-2"><span class="text-primary me-2 fw-bold">&gt;</span> Musik pengiring yang
+                                bagus dan grafis piksel yang sangat rapi.</li>
+                        </ul>
+
+                        <h4 class="text-white mt-5 mb-3 border-bottom border-secondary pb-2">Tentang Versi Ini</h4>
+                        <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.05rem;">
+                            Dikembangkan menggunakan game engine Godot secara independen oleh <b>Jorel Simpson</b>.
+                            Versi indie dari Minesweeper ini dibuat dengan penuh dedikasi (100% tanpa campur tangan
+                            kecerdasan buatan / AI-free) dan menawarkan cara baru bermain Minesweeper yang tidak akan
+                            Anda temukan di versi lain. Sangat direkomendasikan bagi Anda yang mencari pengalaman
+                            bermain yang segar dan inovatif.
+                        </p>
+                    </div>
+
+                    
+                    <div class="col-lg-4">
+
+                        <h5 class="text-white mb-3 fw-bold">Screenshots</h5>
+                        <div class="d-flex flex-column gap-4 mb-4">
+                            <img src="https://img.itch.zone/aW1hZ2UvMzY4MDI3OC8yMTg5NzQ4MC5wbmc=/original/rYnkWD.png"
+                                class="img-fluid rounded-3 shadow-sm border border-secondary" alt="Screenshot 1">
+                            <img src="https://img.itch.zone/aW1hZ2UvMzY4MDI3OC8yMTg5NzQ4MS5wbmc=/original/9UUR3X.png"
+                                class="img-fluid rounded-3 shadow-sm border border-secondary" alt="Screenshot 2">
+                            <img src="https://img.itch.zone/aW1hZ2UvMzY4MDI3OC8yMTg5NzQ4My5wbmc=/original/3wnFUj.png"
+                                class="img-fluid rounded-3 shadow-sm border border-secondary" alt="Screenshot 3">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row mb-4">
+
+                <div class="col text-center">
+                    <h2 class="mb-3 text-light fw-bold">Tempat Bermain Lainnya</h2>
+                    <p class="text-muted">Coba beberapa variasi Minesweeper online dari rekomendasi berikut.
+                    </p>
+                </div>
+
+            </div>
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-other-place h-card h-100">
+                        <a href="MSO.html" class="card-link d-block h-100 text-reset text-decoration-none">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNc6_w_u4jo3_HEeLn1zs5TOPHRtD2MueIBA&s"
+                                class="card-img-top" alt="Minesweeper Online">
+                            <div class="card-body">
+                                <h5 class="card-title">Minesweeper Online</h5>
+                                <p class="card-text">Permainan Minesweeper versi web untuk latihan cepat dan seru.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-other-place h-card h-100">
+                        <a href="MSP.html" class="card-link d-block h-100 text-reset text-decoration-none">
+                            <img src="https://play-lh.googleusercontent.com/rMKdgtE7XpRvXKxBw8j-0nyBNFuhefcLVL36uz7RvTP_5_HIO8qPLJpaviuMeIjNkQ"
+                                class="card-img-top" alt="Minesweeper Playstore">
+                            <div class="card-body">
+                                <h5 class="card-title">Minesweeper (Evkar games)</h5>
+                                <p class="card-text">Rasakan nuansa Minesweeper mobile dengan tampilan modern.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-other-place h-card h-100">
+                        <a href="MSR.html" class="card-link d-block h-100 text-reset text-decoration-none">
+                            <img src="https://play-lh.googleusercontent.com/pLKoeyNovQL0qtkM5d_Uz3vkzMvjK2wk7eRpkSwGAeDL8RcKkaiH2DG4bIw-aVZc9vUr=w480-h960-rw"
+                                class="card-img-top" alt="Minesweeper Classic Retro">
+                            <div class="card-body">
+                                <h5 class="card-title">Minesweeper Classic: Retro</h5>
+                                <p class="card-text">Versi klasik yang menghadirkan pengalaman Minesweeper nostalgia.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-other-place h-card h-100">
+                        <a href="MSN.html" class="card-link d-block h-100 text-reset text-decoration-none">
+                            <img src="https://play-lh.googleusercontent.com/EkxUFZPd75X0rM4l8ugRN5523W8PuarQ4wlesV1v7Aw8ZfR-y8iHB5MJTm2ffpkNOjPy"
+                                class="card-img-top" alt="Minesweeper Netflix">
+                            <div class="card-body">
+                                <h5 class="card-title">Minesweeper Netflix</h5>
+                                <p class="card-text">Cek tampilan Minesweeper dengan tema minimalis layaknya aplikasi
+                                    modern.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-other-place h-card h-100">
+                        <a href="GMS.html" class="card-link d-block h-100 text-reset text-decoration-none">
+                            <img src="msg.png" class="card-img-top" alt="Google Minesweeper">
+                            <div class="card-body">
+                                <h5 class="card-title">Google Minesweeper</h5>
+                                <p class="card-text">Salah satu sumber Minesweeper sederhana dan mudah dimainkan.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-other-place h-card h-100">
+                        <a href="#" class="card-link d-block h-100 text-reset text-decoration-none">
+                            <img src="https://img.itch.zone/aW1nLzIxODk3MzA3LnBuZw==/315x250%23c/38Qj70.png"
+                                class="card-img-top" alt="Minesweeper Plus">
+                            <div class="card-body">
+                                <h5 class="card-title">Minesweeper Plus</h5>
+                                <p class="card-text">Versi alternatif dengan fitur tambahan untuk pemain yang ingin
+                                    tantangan baru.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
